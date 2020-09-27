@@ -120,7 +120,7 @@
   text-align: center;
   background-color: beige;
   border: 5px solid black;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .github{
   width: 9%;
