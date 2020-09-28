@@ -1,16 +1,21 @@
 *{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  }
-  body{
-    font-family: montserrat;
-    background-image: url("https://images.unsplash.com/photo-1539448455561-25e1e5821f70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
-    color: #000000;
-  }
-  nav{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  /* text-align: center; */
+}
+h1, h2, h3{
+  text-align: center;
+}
+body{
+  font-family: montserrat;
+  background-color: #333333;
+  background-image: url("https://images.unsplash.com/photo-1539448455561-25e1e5821f70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  /* text-align: center; */
+}
+nav{
   background: #1E1F26;
   height: 80px;
   width: 100%;
@@ -92,98 +97,47 @@ a.active,a:hover{
     left: 0;
   }
 }
-  .skills-text{
-    background-color: #F5F5DC;
-    width: 320px;
-    height: 350px;
-    margin: 10% auto;
-    text-align: center;
-    text-decoration-color: white;
-    border: 3px solid black;
-    /* opacity: 0.8; */
-  }
-  .skills-div{
-      position: fixed;
-      width: 100%;
-      height: 12%;
-      background-color: none;
-      text-align: center;
-      bottom: 0;
-  }
-
-  .html-div{
-  width: 10%;
-  height: 70%;
-  background-color: none;
-  /* border: 2px solid black; */
-  float: left;
-  margin-left: 20% ;
+.grid-container {
+  display: grid;
+  /* grid-gap: 10px 10px; */
+  grid-template-columns: auto auto auto;
+  /* padding: 10px; */
+  width: 400px;
+  height: 400px;
+  margin: 4% auto;
+  text-align: center;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  width: 110px;
+  height: 110px;
+  text-align: center;
 }
 .skill-html{
-  width: 50%;
+  width: 110%;
   height: 100%;
-}
-.css-div{
-  width: 10%;
-  height: 70%;
-  background-color: none;
-  /* border: 2px solid black; */
-  position: absolute;
-  left: 30%;
 }
 .skill-css{
-  height: 100%;
-  width: 40%;
-}
-.js-div{
-  width: 10%;
-  height: 70%;
-  background-color: none;
-  margin: auto;
-  /* border: 2px solid black; */
-  left: 40%;
-  position: absolute;
-  top: 0%;
+  width: 100%;
+  height: 110%;
 }
 .skill-js{
-  height: 100%;
-  width: 40%;
-}
-.c-div{
-  width: 10%;
-  height: 70%;
-  background-color: none;
-  position: absolute;
-  /* border: 2px solid black; */
-  right: 40%;
+  width: 100%;
+  height: 110%;
 }
 .skill-c{
+  width: 100%;
   height: 100%;
-  width: 60%;
-}
-.php-div{
-  width: 10%;
-  height: 70%;
-  background-color: none;
-  /* border: 2px solid black; */
-  position: absolute;
-  top: 0%;
-  right: 30%;
 }
 .skill-php{
-  width: 50%;
+  width: 100%;
   height: 100%;
-}
-.sql-div{
-  width: 10%;
-  height: 80%;
-  background-color: none;
-  /* border: 2px solid black; */
-  position: absolute;
-  top: 0%;
-  right: 20%;
 }
 .skill-sql{
   width: 110%;
-  height: 110%;
+  height: 110%
 }
+
+
