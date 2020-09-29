@@ -188,3 +188,13 @@
 /* h4{
   color: white;
 } */
+.memory{
+  width: 25%;
+  height: 25%;
+  margin: auto;
+  border: 1px solid black;
+}
+.memory:hover{
+  background-color: #349873;
+
+}
