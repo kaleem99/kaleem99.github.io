@@ -98,13 +98,22 @@
     transition: transform .2s;
     margin-top: 1px;
 }
-.info-text{
-  width: 300px;
-  height: 375px;
-  background-color: beige;
-  border: 3px solid black;
-  margin: 5% auto;
-  /* opacity: 0.8; */
+.info-text {
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-columns: auto auto auto;
+  /* padding: 10px; */
+  width: 400px;
+  height: 300px;
+  margin: 100px auto;
+  text-align: center;
+}
+.info-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  width: 110px;
+  height: 110px;
   text-align: center;
 }
 .kaleem:hover {
@@ -112,89 +121,33 @@
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5); 
 }
-.projects{
-  width: 100%;
-  height: 90px;
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  background-color: beige;
-  border: 5px solid black;
-  /* opacity: 0.8; */
-}
 .github{
-  width: 9%;
-  height: 70%;
+  width: 90px;
+  height: 90px;
   background-color: none;
-  /* border: 2px solid black; */
-  float: left;
-  margin-left: 35% ;
-}
-.git{
-  width: 80%;
-  height: 100%;
+  margin-left: auto;
 }
 .linkedin{
-  width: 10%;
-  height: 70%;
-  background-color: none;
-  /* border: 2px solid black; */
-  float: right;
-  margin-right: 35%;
-}
-.linked{
-  height: 110%;
-  width: 90%;
-}
-.twitter{
-  width: 10%;
-  height: 70%;
+  width: 90px;
+  height: 90px;
   background-color: none;
   margin: auto;
-  /* border: 2px solid black; */
-  margin-left: 25%;
-  position: absolute;
-  top: 0%;
-}
-.tweet{
-  height: 100%;
-  width: 90%;
 }
 .facebook{
-  width: 10%;
-  height: 70%;
+  width: 90px;
+  height: 90px;
   background-color: none;
   margin: auto;
   /* border: 2px solid black; */
-  margin: auto;
-}
-.facebk{
-  height: 100%;
-  width: 60%;
 }
 .instagram{
-  width: 10%;
-  height: 70%;
-  background-color: none;
-  /* border: 2px solid black; */
-  position: absolute;
-  top: 0%;
-  right: 25%;
-}
-.insta{
-  width: 50%;
-  height: 100%;
-}
-/* h4{
-  color: white;
-} */
-.memory{
-  width: 25%;
-  height: 25%;
+  width: 90px;
+  height: 90px;
   margin: auto;
-  border: 1px solid black;
 }
 .memory:hover{
   background-color: #349873;
-
+}
+.resume:hover{
+  background-color: #349873;
 }
