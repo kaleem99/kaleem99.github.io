@@ -101,9 +101,9 @@
 .info-text {
   display: grid;
   grid-gap: 10px 10px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   /* padding: 10px; */
-  width: 400px;
+  width: 300px;
   height: 300px;
   margin: 100px auto;
   text-align: center;
