@@ -23,7 +23,7 @@ label.logo{
   color: white;
   font-size: 35px;
   line-height: 80px;
-  padding: 0 100px;
+  padding: 10px;
   font-weight: bold;
 }
 nav ul{
@@ -97,16 +97,17 @@ a.active,a:hover{
   }
 }
 .kaleem{
-height: 120px;
-width: 100px;
-transition: transform .2s;
-margin-top: 20px;
-opacity: none;
+  height: 150px;
+  width: 110px;
+  transition: transform .2s;
+  margin-top: 25px;
+  opacity: none;
+  border: 1px solid black;
 }
 .box{
   width: 260px;
-  height: 410px;
-  background-color: darkslategray;
+  height: 440px;
+  background-color: #AEC8CE;
   margin: 4% auto;
   text-align: center;
   border: 2px solid black;
@@ -134,7 +135,7 @@ opacity: none;
 .kaleem:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
+  transform: scale(1.3); 
 }
 .github{
   width: 90px;
