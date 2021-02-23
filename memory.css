@@ -10,6 +10,10 @@ body{
   border-radius: 40px;
   border: 2px solid rgba(0, 0, 0, 0.8);
 }
+#btn{
+  text-align: center;
+  margin-left: 30%;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 120px 120px 120px;
