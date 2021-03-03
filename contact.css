@@ -16,6 +16,8 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  /* overflow: hidden; Hide scrollbars */
+
 }
 nav{
   background: #1E1F26;
@@ -99,31 +101,77 @@ a.active,a:hover{
     left: 0;
   }
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* background-color: #2196F3; */
+  padding: 5px;
+  max-width: 480px;
+  max-height: 600px;
+  margin: 1% auto;
+
+}
+
+.grid-item {
+  width: 90%;
+  height: 600px;
+  padding: 10px;
+  /* font-size: 20px; */
+  text-align: center;
+  text-align: center;
+  margin: 1% auto;
+  background-color:	#2d2e33;
+  border: 2px solid white;
+  /* opacity: 0.8; */
+}
 .div-form{
     margin: 4% auto;
-    width: 280px;
-    height: 380px;
+    width: 95%;
+    height: 550px;
     background-color: seashell;
     border: 2px solid #1E1F26;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
 }
 .btn-submit{
-    margin-left: 10%;
+    margin: auto;
     margin-top: 5px;
-    width: 180px;
-    height: 30px;
+    width: 90%;
+    height: 40px;
     padding: 2px;
 }
-.information{
-    margin: 5% auto;
-    height: 30px;
-    width: 280px;
-    background-color: #1E1F26;
+/* .information{
+    margin: 0% auto;
+    height: 0px;
+    width: 80%;
+    background-color: blue;
+} */
+.btnSubmit{
+  margin-top: 5%;
+  width: 40%;
+  height: 40px;
+  border-radius: 5px;
 }
-
 .message-form{
   height: 80px;
-  margin-left: 10%;
-  width: 180px;
+  width: 90%;
+  margin: auto;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* background-color: #2196F3; */
+  /* margin-left: -41px; */
+  max-width: 100%;
+  margin-top: 12%;
+  padding: 10px;
+}
+.grid-item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 4px;
+  font-size: 16px;
+  text-align: center;
+  background-color: lightgrey;
 }
