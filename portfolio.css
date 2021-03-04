@@ -12,6 +12,8 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  overflow: hidden; /* Hide scrollbars */
+
 }
 
 nav{
@@ -103,14 +105,16 @@ a.active,a:hover{
   margin-top: 25px;
   opacity: none;
   border: 1px solid white;
+  border-radius: 10px;
 }
 .box{
-  width: 320px;
-  height: 450px;
+  max-width: 350px;
+  height: 500px;
   background-color: #2D2E33;
-  margin: 4% auto;
+  margin: 8% auto;
   text-align: center;
   border: 2px solid white;
+  border-radius: 5px;
 }
 .text {
   display: grid;
@@ -131,6 +135,7 @@ a.active,a:hover{
   width: 105px;
   height: 105px;
   text-align: center;
+  border-radius: 5px;
 }
 .kaleem:hover {
   -ms-transform: scale(1.5); /* IE 9 */
@@ -142,12 +147,14 @@ a.active,a:hover{
   height: 90px;
   background-color: none;
   margin-left: auto;
+  border-radius: 5px;
 }
 .linkedin{
   width: 90px;
   height: 90px;
   background-color: none;
   margin: auto;
+  border-radius: 5px;
 }
 .facebook{
   width: 90px;

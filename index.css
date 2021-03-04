@@ -39,6 +39,7 @@ body{
   margin: 1% auto;
   background-color:	#2d2e33;
   border: 2px solid white;
+  border-radius: 10px;
   /* opacity: 0.8; */
 }
 
@@ -131,6 +132,7 @@ a.active,a:hover{
     margin-top: 10px;
     opacity: 20;
     border: 1px solid white;
+    border-radius: 5px;
 }
 .text {
   width: 330px;

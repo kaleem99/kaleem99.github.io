@@ -33,7 +33,7 @@
         <div class="grid-container">
           <div class="grid-item">
             <div class="div-form">
-        <form name="myForm" action="mailto:kaleem1999@outlook.com" method="post">
+        <form action="https://formspree.io/f/xzbklwlr" method="post" id="myForm" name="myForm">
           <label for="FullName">Name Surname</label><br>
            <input type="text" id="FullName" name="FullName" value="" class="btn-submit" required><br>
            <label for="email">email</label><br>
@@ -43,7 +43,7 @@
            <label for="Subject">Subject</label><br>
            <input type="text" id="Subject" name="Subject" value="" class="btn-submit" required><br>
            <label for="Message">Message</label><br>
-           <textarea class="message-form" id="message"></textarea>
+           <input type="textarea" class="message-form" id="myForm" form="myForm" name="myForm" value="Optional">
            <input type="submit" value="Submit" class="btnSubmit">
         </form>
         <div class="grid-container2">

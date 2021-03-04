@@ -156,6 +156,7 @@ a.active,a:hover{
   height: 80px;
   width: 90%;
   margin: auto;
+  text-align: center;
 }
 
 .grid-container2 {
@@ -166,6 +167,7 @@ a.active,a:hover{
   max-width: 100%;
   margin-top: 12%;
   padding: 10px;
+  /* border-radius: 10px; */
 }
 .grid-item2 {
   background-color: rgba(255, 255, 255, 0.8);
@@ -174,4 +176,5 @@ a.active,a:hover{
   font-size: 16px;
   text-align: center;
   background-color: lightgrey;
+  border-radius: 2px;
 }
