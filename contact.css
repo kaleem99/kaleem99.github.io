@@ -48,7 +48,7 @@ nav ul li a{
   text-transform: uppercase;
 }
 a.active,a:hover{
-  background: #349873;
+  transform: scale(1.5);
   transition: .5s;
 }
 .checkbtn{
@@ -102,7 +102,7 @@ a.active,a:hover{
   }
 }
 .grid-container {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: repeat(1, 1fr);
   /* background-color: #2196F3; */
   padding: 5px;
@@ -113,28 +113,31 @@ a.active,a:hover{
 }
 
 .grid-item {
-  width: 90%;
-  height: 600px;
+  max-width: 90%;
+  height: 650px;
   padding: 10px;
   /* font-size: 20px; */
+  border-radius: 20px;
   text-align: center;
   text-align: center;
   margin: 1% auto;
-  background-color:	#2d2e33;
-  border: 2px solid white;
+  background-color:	white;
   /* opacity: 0.8; */
 }
 .div-form{
-    margin: 4% auto;
-    width: 95%;
-    height: 550px;
-    background-color: seashell;
-    border: 2px solid #1E1F26;
-    text-align: center;
-    padding: 10px;
+    /* position: relative; */
+    max-width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    background: #8fadc5;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
 .btn-submit{
     margin: auto;
+    border-radius: 50px;
     margin-top: 5px;
     width: 90%;
     height: 40px;
@@ -148,33 +151,47 @@ a.active,a:hover{
 } */
 .btnSubmit{
   margin-top: 5%;
-  width: 40%;
-  height: 40px;
-  border-radius: 5px;
+  border-radius: 50px;
+  width: 90%;
+  height: 50px;
+  cursor: pointer;
+  background-color: #FEB81D;
+  box-shadow: 6px 6px 6px #b0c5d6, -6px -6px 6px #b0c5d6;
+  transition: 0.5s;
+  border: 1px solid #FEB81D;
 }
+button:hover {
+  box-shadow: none;
+}
+
 .message-form{
   height: 80px;
   width: 90%;
   margin: auto;
+  border-radius: 10px;
   text-align: center;
 }
 
 .grid-container2 {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto;
   /* background-color: #2196F3; */
   /* margin-left: -41px; */
+  /* border: 1px solid black; */
   max-width: 100%;
-  margin-top: 12%;
-  padding: 10px;
-  /* border-radius: 10px; */
+  margin-top: 8%;
+  /* padding: 10px; */
+  border-radius: 50px;
 }
 .grid-item2 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(148, 130, 130, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
   padding: 4px;
   font-size: 16px;
   text-align: center;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   border-radius: 2px;
+  max-width: 50px;
+  height: 50px;
+  margin: auto;
 }
