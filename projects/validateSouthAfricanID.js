@@ -105,7 +105,7 @@ function isIdNumberValid(idNum) {
 document.getElementById("ID").onchange = function(){
     let x = document.getElementById("ID").value;
     if(x.length != 13){
-        alert("ID Number length is Incorrect")
+      document.getElementById("resultContainer").innerHTML = "Incorrect Length";
     }
 }
 document.getElementById("submit").onclick = function(){
