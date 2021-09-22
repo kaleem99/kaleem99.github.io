@@ -17,20 +17,28 @@ body {
 .container {
   position: relative;
   width: 400px;
-  height: 550px;
+  height: 600px;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;
   background: #ecf0f3;
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
-
-.brand-logo {
-  height: 150px;
-  width: 200px;
-  background: url("https://southernimplants.com/wp-content/uploads/2021/08/RSA_Flag.png");
+.Result{
+  width: 250px;
+  height: 50px;
+  /* background-color: #001389; */
   margin: auto;
+}
+.brand-logo {
+  height: 200px;
+  width: 250px;
+  text-align: left;
+  padding: 5px;
+  margin: auto;
+  border: 2px solid green;
   /* border-radius: 50%; */
+  border-radius: 5px;
   box-sizing: border-box;
   box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
 }

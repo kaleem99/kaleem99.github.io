@@ -46,13 +46,13 @@ nav ul li{
 }
 nav ul li a{
   color: white;
-  font-size: 17px;
+  font-size: 22px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
 a.active,a:hover{
-  background: #349873;
+  background: #FEB81D;
   transition: .5s;
 }
 .checkbtn{
@@ -97,12 +97,12 @@ a.active,a:hover{
   nav ul li a{
     font-size: 20px;
   }
-  a:hover,a.active{
-    background: none;
-    color: #349873;
-  }
   #check:checked ~ ul{
     left: 0;
+  }
+  a.active,a:hover{
+    background: #FEB81D;
+    transition: .5s;
   }
 }
 .grid-container {

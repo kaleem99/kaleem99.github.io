@@ -11,11 +11,13 @@ h2{
 }
 body{
   font-family: serif; 
-  background-image: url("https://images.unsplash.com/photo-1539448455561-25e1e5821f70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1539448455561-25e1e5821f70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"); */
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: #111111
+  ;
   /* overflow: hidden; Hide scrollbars */
 
 }
@@ -42,12 +44,13 @@ nav ul li{
 }
 nav ul li a{
   color: white;
-  font-size: 17px;
+  font-size: 22px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
 a.active,a:hover{
+  background: #FEB81D;
   transform: scale(1.5);
   transition: .5s;
 }
@@ -93,10 +96,7 @@ a.active,a:hover{
   nav ul li a{
     font-size: 20px;
   }
-  a:hover,a.active{
-    background: none;
-    color: #349873;
-  }
+  
   #check:checked ~ ul{
     left: 0;
   }
@@ -132,8 +132,8 @@ a.active,a:hover{
     padding-left: 40px;
     padding-right: 40px;
     box-sizing: border-box;
-    background: #8fadc5;
-    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    background: #FEB81D;
+    /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white; */
 }
 .btn-submit{
     margin: auto;
@@ -155,10 +155,10 @@ a.active,a:hover{
   width: 90%;
   height: 50px;
   cursor: pointer;
-  background-color: #FEB81D;
+  background-color: white;
   box-shadow: 6px 6px 6px #b0c5d6, -6px -6px 6px #b0c5d6;
   transition: 0.5s;
-  border: 1px solid #FEB81D;
+  border: 1px solid white;
 }
 button:hover {
   box-shadow: none;
