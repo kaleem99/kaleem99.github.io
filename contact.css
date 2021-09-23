@@ -25,6 +25,8 @@ nav{
   background: #1E1F26;
   height: 80px;
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 label.logo{
   color: white;
@@ -42,6 +44,10 @@ nav ul li{
   line-height: 80px;
   margin: 0 5px;
 }
+#myForm{
+  margin: auto;
+  padding: 5px;
+}
 nav ul li a{
   color: white;
   font-size: 22px;
@@ -49,8 +55,12 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.active,a:hover{
+a.active{
   background: #FEB81D;
+  transform: scale(1.5);
+  transition: .5s;
+}
+a:hover{
   transform: scale(1.5);
   transition: .5s;
 }
@@ -101,6 +111,25 @@ a.active,a:hover{
     left: 0;
   }
 }
+@media (max-width: 300px){
+  .grid-container{
+    width: 280px;
+  }
+  .grid-item{
+    width: 280px;
+    /* padding: 1px; */
+  }
+  .div-form{
+    width: 100%;
+    padding-left: none;
+    padding-right: none;
+  }
+  #myForm{
+    width: 200px;
+    /* padding: 1px; */
+    margin: auto;
+  }
+}
 .grid-container {
   /* display: grid; */
   grid-template-columns: repeat(1, 1fr);
@@ -108,13 +137,14 @@ a.active,a:hover{
   padding: 5px;
   max-width: 480px;
   max-height: 600px;
-  margin: 1% auto;
+  margin: auto;
+  margin-top: 5%;
 
 }
 
 .grid-item {
   max-width: 90%;
-  height: 650px;
+  height: 640px;
   padding: 10px;
   /* font-size: 20px; */
   border-radius: 20px;
@@ -129,8 +159,8 @@ a.active,a:hover{
     max-width: 400px;
     height: 600px;
     border-radius: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
     box-sizing: border-box;
     background: #FEB81D;
     /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white; */
@@ -152,7 +182,7 @@ a.active,a:hover{
 .btnSubmit{
   margin-top: 5%;
   border-radius: 50px;
-  width: 90%;
+  width: 80%;
   height: 50px;
   cursor: pointer;
   background-color: white;
@@ -179,7 +209,7 @@ button:hover {
   /* margin-left: -41px; */
   /* border: 1px solid black; */
   max-width: 100%;
-  margin-top: 8%;
+  margin-top: 5%;
   /* padding: 10px; */
   border-radius: 50px;
 }

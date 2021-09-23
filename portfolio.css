@@ -18,9 +18,12 @@ body{
 }
 
 nav{
-  background: none;
+  background: black;
   height: 80px;
   width: 100%;
+  position: fixed;
+  top: 0;
+
 }
 label.logo{
   color: white;
@@ -76,6 +79,7 @@ a.active,a:hover{
   }
   
 }
+
 @media (max-width: 858px){
   .checkbtn{
     display: block;
@@ -127,14 +131,8 @@ a.active,a:hover{
   grid-gap: 10px 10px;
   background-color: none;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-  /* align-items: center; */
-  /* width: 260px;
-  height: 260px; */
-  margin: auto;
-  /* text-align: center; */
-  /* border: 2px solid black; */
-  padding: 10px;
+  margin: 10% auto;
+  padding-top: 50px;
 }
 .info-item {
   /* display: grid; */

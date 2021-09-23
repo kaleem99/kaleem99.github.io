@@ -42,7 +42,7 @@ body{
 
 
 nav{
-  background: #1E1F26;
+  background: #000;
   height: 80px;
   width: 100%;
 }
@@ -167,7 +167,7 @@ a.active,a:hover{
   min-height:170px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
    .grid-item1 { 
     float: none;
     margin-right:0;
