@@ -137,11 +137,14 @@ a:hover{
   padding: 5px;
   max-width: 480px;
   max-height: 600px;
-  margin: auto;
-  margin-top: 5%;
+  margin: -80px auto;
+  /* margin-top: 5%; */
 
 }
-
+.h2{
+  color: white;
+  margin: 100px auto;
+}
 .grid-item {
   max-width: 90%;
   height: 640px;
@@ -150,7 +153,7 @@ a:hover{
   border-radius: 20px;
   text-align: center;
   text-align: center;
-  margin: 1% auto;
+  margin: 3px auto;
   background-color:	white;
   /* opacity: 0.8; */
 }

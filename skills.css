@@ -10,10 +10,11 @@ h1, h2, h3{
   text-align: center;
 }
 .HeaderDiv{
-  background-color: #349873;
+  background-color: #FEB81D;
   width: 300px;
   text-align: center;
   margin: auto;
+  border-radius: 10px;
 }
 body{
   font-family: serif; 
