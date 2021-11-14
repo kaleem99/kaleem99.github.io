@@ -31,48 +31,44 @@ function isDateValid(year, month, day) {
   return month >= 0 && month < 12 && day > 0 && day <= result;
 }
 
-function getDateOfBirth(idNumber, counter = 0){
-  let dateOfBirth = ""
+function getDateOfBirth(idNumber, counter = 0) {
+  let dateOfBirth = "";
   let Year = idNumber.substring(0, 2);
-  let Month = idNumber.substring(2, 4)
-  let Day = idNumber.substring(4, 6)
+  let Month = idNumber.substring(2, 4);
+  let Day = idNumber.substring(4, 6);
 
-  let cutOffYear = (new Date()).getFullYear() - 2000
-  if(Year > cutOffYear){
+  let cutOffYear = new Date().getFullYear() - 2000;
+  if (Year > cutOffYear) {
     dateOfBirth = "19";
+  } else {
+    dateOfBirth = "20";
   }
-  else{
-    dateOfBirth = "20"
-  }
-  dateOfBirth += Year + '/' + Month + '/' + Day;
-  console.log(counter)
-  return dateOfBirth
+  dateOfBirth += Year + "/" + Month + "/" + Day;
+  console.log(counter);
+  return dateOfBirth;
 }
 
-function  southAfricanCitizen(num){
+function southAfricanCitizen(num) {
   let result = "";
-  if(num == 0){
+  if (num == 0) {
     result = "SA citizen";
-  }
-  else if(num == 1){
-    result = "Permanent Resident"
-  }
-  else{
+  } else if (num == 1) {
+    result = "Permanent Resident";
+  } else {
     result = "Invalid";
   }
   return result;
 }
 
-function  gender(idNumber){
+function gender(idNumber) {
   let maleOrFemale = idNumber.slice(6, 10);
   let result = "Invalid";
-  if(maleOrFemale >= 0000 && maleOrFemale <= 4999){
+  if (maleOrFemale >= 0000 && maleOrFemale <= 4999) {
     result = "Female";
-  }
-  else if(maleOrFemale >= 5000 && maleOrFemale <= 9999){
+  } else if (maleOrFemale >= 5000 && maleOrFemale <= 9999) {
     result = "Male";
   }
-  return result
+  return result;
 }
 
 function isIdNumberValid(idNum) {
@@ -93,30 +89,43 @@ function isIdNumberValid(idNum) {
   if (idNum[idNum.length - 3] == 1 || idNum[idNum.length - 3] == 0) {
     counter++;
   }
-  document.getElementById("DOB").innerHTML = "Date of Birth: " + getDateOfBirth(idNum);
-  document.getElementById("CITIZEN").innerHTML = "CITIZEN: " + southAfricanCitizen(idNum[idNum.length-3])
+  document.getElementById("DOB").innerHTML =
+    "Date of Birth: " + getDateOfBirth(idNum);
+  document.getElementById("CITIZEN").innerHTML =
+    "CITIZEN: " + southAfricanCitizen(idNum[idNum.length - 3]);
   document.getElementById("GENDER").innerHTML = "Gender: " + gender(idNum);
-  document.getElementById("AGE").innerHTML = "Age: " + (new Date().getFullYear() - parseInt(getDateOfBirth(idNum).slice(0, 5)));
-  // document.getElementById("CITIZEN").innerHTML = "Gender: " + 
+  document.getElementById("AGE").innerHTML =
+    "Age: " +
+    (new Date().getFullYear() - parseInt(getDateOfBirth(idNum).slice(0, 5)));
+  // document.getElementById("CITIZEN").innerHTML = "Gender: " +
   // getDateOfBirth(idNum, counter)
   return counter == 4;
 }
 
-document.getElementById("ID").onchange = function(){
-    let x = document.getElementById("ID").value;
-    if(x.length != 13){
-      document.getElementById("resultContainer").innerHTML = "Incorrect Length";
+document.getElementById("ID").onchange = function () {
+  let x = document.getElementById("ID").value;
+  if (x.length != 13) {
+    document.getElementById("resultContainer").innerHTML = "Incorrect Length";
+  }
+};
+document.getElementById("submit").onclick = function () {
+  let x = document.getElementById("ID").value;
+  if (x !== "") {
+    // isIdNumberValid(x);
+    if (isIdNumberValid(x) == true) {
+      document.getElementById("resultContainer").style.color = "blue";
+      document.getElementById("resultContainer").innerHTML = "Valid ID Number";
+    } else if(x.length !== 13){
+      document.getElementById("resultContainer").style.color = "red";
+      document.getElementById("resultContainer").innerHTML =
+        "Invalid Length";
     }
-}
-document.getElementById("submit").onclick = function(){
-  let x = document.getElementById("ID").value
-  isIdNumberValid(x);    
-  if(isIdNumberValid(x) == true){
-    document.getElementById("resultContainer").style.color = "blue"
-    document.getElementById("resultContainer").innerHTML = "Valid ID Number";
+    else {
+      document.getElementById("resultContainer").innerHTML =
+        "Invalid ID Number";
+    }
   }
   else{
-    document.getElementById("resultContainer").style.color = "red"
-    document.getElementById("resultContainer").innerHTML = "Invalid ID Number";
+    document.getElementById("resultContainer").innerHTML = "Invalid Input";
   }
-}
+};
